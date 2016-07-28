@@ -1,6 +1,6 @@
 gulp = require 'gulp'
 pug = require 'gulp-coffee'
-coffeeify = require 'gulp-coffeeify'
+browserify = require 'gulp-browserify'
 uglify = require 'gulp-uglify'
 sourcemap = require 'gulp-sourcemaps'
 gutil = require 'gulp-util'
@@ -10,10 +10,9 @@ path = require '../../path'
 gulp.task 'build:coffee', ()->
   gulp.src path.coffee.src + "/index.coffee", {read: false}
   .pipe sourcemap.init()
-  .pipe coffeeify({
-    options: {
-      bare: false
-    }
+  .pipe browserify({
+    transform: ['coffeeify'],
+    extensions: ['.coffee']
   })
   .pipe uglify()
   .pipe sourcemap.write('.')

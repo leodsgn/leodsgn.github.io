@@ -9,7 +9,7 @@ gulp.task 'build:stylus', ()->
   gulp.src path.stylus.src + "/index.styl"
   .pipe sourcemap.init()
   .pipe stylus({
-    compress: true
+    compress: true,
   })
   .pipe sourcemap.write('.')
   .on 'error', gutil.log
