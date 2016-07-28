@@ -1,0 +1,41 @@
+head
+    title leodsgn - Leonardo Ribeiro
+    include ./templates/vars.pug
+
+    //Search engines
+    meta(name="description" content=description)
+
+    //Google Plus
+    // Update your html tag to include the itemscope and itemtype attributes.
+    // html itemscope itemtype="http://schema.org/{CONTENT_TYPE}"
+
+    meta(itemprop="name" content=title)
+    meta(itemprop="description" content=description)
+    meta(itemprop="image" content=image)
+    meta(name="author" content="https://github.com/leodsgn")
+    meta(name="robots" content="index, follow")
+    meta(name="revisit-after" content="1 month")
+
+    // Twitter
+
+    meta(name="twitter:card" content="")
+    meta(name="twitter:site" content=site)
+    meta(name="twitter:title" content=title)
+    meta(name="twitter:description" content=description)
+    meta(name="twitter:creator" content=twitterAuthor)
+    meta(name="twitter:image:src" content=image)
+    //meta(name="twitter:player" content="")
+
+    // Open Graph General (Facebook & Pinterest)
+
+    meta(property="og:url" content=site)
+    meta(property="og:title" content=title)
+    meta(property="og:description" content=description)
+    meta(property="og:site_name" content=title)
+    meta(property="og:image" content=image)
+    meta(property="fb:admins" content="100005806092858")
+    meta(property="fb:app_id" content="130160860755701")
+    meta(property="og:type" content="website")
+    //meta(property="og:locale" content="")
+    //meta(property="og:audio" content="")
+    //meta(property="og:video" content="")
