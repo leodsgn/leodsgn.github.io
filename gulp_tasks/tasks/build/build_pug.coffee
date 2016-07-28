@@ -17,4 +17,5 @@ gulp.task 'build:pug', ()->
 
 
 gulp.task 'watch:pug', ()->
-  gulp.watch path.pug.src + '/**/**/*.pug', ['build:pug']
+  gulp.watch path.pug.src + '/**/**/*.pug', {cwd: path.pug.src}, ['build:pug']
+  return

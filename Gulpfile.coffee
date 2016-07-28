@@ -4,5 +4,5 @@ runSequence = require 'run-sequence'
 
 requireDir('./gulp_tasks/tasks', {recurse: true})
 
-gulp.task 'default', ()->
+gulp.task 'default',  ()->
   runSequence 'build', 'watch', 'serve'

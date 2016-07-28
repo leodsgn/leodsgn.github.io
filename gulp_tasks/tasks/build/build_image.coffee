@@ -12,4 +12,5 @@ gulp.task 'build:images', ()->
 
 
 gulp.task 'watch:images', ()->
-  gulp.watch path.image.src + "/*", ['build:images']
+  gulp.watch path.image.src + "/*", {cwd: path.image.src}, ['build:images']
+  return

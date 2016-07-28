@@ -22,4 +22,5 @@ gulp.task 'build:coffee', ()->
 
 
 gulp.task 'watch:coffee', ()->
-  gulp.watch path.coffee.src + '/**/**/*.coffee', ['build:coffee']
+  gulp.watch path.coffee.src + '/**/**/*.coffee', {cwd: path.coffee.src}, ['build:coffee']
+  return

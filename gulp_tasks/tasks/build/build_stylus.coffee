@@ -17,4 +17,5 @@ gulp.task 'build:stylus', ()->
 
 
 gulp.task 'watch:stylus', ()->
-  gulp.watch path.pug.src + '/**/**/*.styl', ['build:stylus']
+  gulp.watch path.stylus.src + '/**/**/*.styl', {cwd: path.stylus.src}, ['build:stylus']
+  return
