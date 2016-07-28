@@ -1,6 +1,9 @@
 head
-    title leodsgn - Leonardo Ribeiro
     include ./templates/vars.pug
+    title!= title
+
+    link(rel="shortcut icon" href="dist/favicon.ico")
+    meta(name="viewport" content="width=device-width, user-scalable=no")
 
     //Search engines
     meta(name="description" content=description)
@@ -19,7 +22,7 @@ head
     // Twitter
 
     meta(name="twitter:card" content="")
-    meta(name="twitter:site" content=site)
+    meta(name="twitter:site" content=twitterAuthor)
     meta(name="twitter:title" content=title)
     meta(name="twitter:description" content=description)
     meta(name="twitter:creator" content=twitterAuthor)
@@ -39,3 +42,5 @@ head
     //meta(property="og:locale" content="")
     //meta(property="og:audio" content="")
     //meta(property="og:video" content="")
+
+    link(rel="stylesheet" type="text/css" href="./dist/style/index.css")

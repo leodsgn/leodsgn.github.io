@@ -22,3 +22,7 @@ module.exports =
   image:
     src: path.resolve(root, "src/img")
     build: path.resolve(root, "dist/img")
+
+  favicon:
+    src: path.resolve(root, "src/img/favicon.png")
+    build: path.resolve(root, "dist/favicons")

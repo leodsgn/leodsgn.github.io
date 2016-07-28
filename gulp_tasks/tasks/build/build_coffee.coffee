@@ -2,18 +2,22 @@ gulp = require 'gulp'
 pug = require 'gulp-coffee'
 coffeeify = require 'gulp-coffeeify'
 uglify = require 'gulp-uglify'
-#sourcemap = require 'gulp-sourcemap'
+sourcemap = require 'gulp-sourcemaps'
+gutil = require 'gulp-util'
 
 path = require '../../path'
 
 gulp.task 'build:coffee', ()->
   gulp.src path.coffee.src + "/index.coffee", {read: false}
+  .pipe sourcemap.init()
   .pipe coffeeify({
     options: {
       bare: false
     }
   })
   .pipe uglify()
+  .pipe sourcemap.write('.')
+  .on 'error', gutil.log
   .pipe(gulp.dest(path.coffee.build))
 
 
