@@ -38,27 +38,25 @@
     <link rel="stylesheet" type="text/css" href="./dist/style/index.css">
   </head>
   <body>
-    <script type="text/javascript">
-      window.fbAsyncInit = function () {
-          FB.init({
-              appId: '130160860755701',
-              xfbml: true,
-              version: 'v2.7'
-          });
-      };
-      
-      (function (d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) {
-              return;
-          }
-          js = d.createElement(s);
-          js.id = id;
-          js.src = "//connect.facebook.net/en_US/sdk.js";
-          fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-      
-    </script>
+    <!--script(type="text/javascript").-->
+    <!--    window.fbAsyncInit = function () {-->
+    <!--        FB.init({-->
+    <!--            appId: '130160860755701',-->
+    <!--            xfbml: true,-->
+    <!--            version: 'v2.7'-->
+    <!--        });-->
+    <!--    };-->
+    <!---->
+    <!--    (function (d, s, id) {-->
+    <!--        var js, fjs = d.getElementsByTagName(s)[0];-->
+    <!--        if (d.getElementById(id)) {-->
+    <!--            return;-->
+    <!--        }-->
+    <!--        js = d.createElement(s);-->
+    <!--        js.id = id;-->
+    <!--        js.src = "//connect.facebook.net/en_US/sdk.js";-->
+    <!--        fjs.parentNode.insertBefore(js, fjs);-->
+    <!--    }(document, 'script', 'facebook-jssdk'));-->
     <header class="header">
       <div class="container">
         <div class="logo pull-left"><a href="#">leodsgn.</a></div>
@@ -71,13 +69,20 @@
     </header>
     <section class="intro">
       <div class="container">
-        <div class="col-lg-6 col-lg-offset-3 col-sm-12 text-center personal-details"><img class="personal personal-photo" src="dist/img/leonardo_ribeiro_leodsgn_photo.png" alt="leonardo_ribeiro_leodsgn_photo">
-          <h2 class="personal introducing">Hi, I'm Leonardo Ribeiro</h2>
-          <p class="personal personal-paragraph">
-            An experienced developer with expertise mainly in graphic and UI design, as well,
-            as software user experience development. I already was front-end and back-end developer,
-            using frameworks like Express, Angular, React/Flux (JS), Laravel (PHP), and Java.
-          </p>
+        <div class="row">
+          <div class="col-lg-6 col-lg-offset-3 col-sm-12 text-center personal-details"><img class="personal personal-photo" src="dist/img/leonardo_ribeiro_leodsgn_photo.png" alt="leonardo_ribeiro_leodsgn_photo">
+            <h2 class="personal introducing">Hi, I'm Leonardo Ribeiro</h2>
+            <p class="personal personal-paragraph">
+              An experienced developer with expertise mainly in graphic and UI design, as well,
+              as software user experience development. I already was front-end and back-end developer,
+              using frameworks like Express, Angular, React/Flux (JS), Laravel (PHP), and Java.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-lg-offset-3 col-sm-12 text-center">
+            <p>Hello world</p>
+          </div>
         </div>
       </div>
     </section>
