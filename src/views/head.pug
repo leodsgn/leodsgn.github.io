@@ -12,9 +12,6 @@ head
     // Update your html tag to include the itemscope and itemtype attributes.
     // html itemscope itemtype="http://schema.org/{CONTENT_TYPE}"
 
-    meta(itemprop="name" content=title)
-    meta(itemprop="description" content=description)
-    meta(itemprop="image" content=image)
     meta(name="author" content="https://github.com/leodsgn")
     meta(name="robots" content="index, follow")
     meta(name="revisit-after" content="1 month")
@@ -29,6 +26,9 @@ head
     meta(name="twitter:image:src" content=image)
     //meta(name="twitter:player" content="")
 
+    meta(itemprop="name" content=title)
+    meta(itemprop="description" content=description)
+    meta(itemprop="image" content=image)
     // Open Graph General (Facebook & Pinterest)
 
     meta(property="og:url" content=site)

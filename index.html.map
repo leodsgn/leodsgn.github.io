@@ -1,1 +1,1 @@
-{"version":3,"names":[],"mappings":"","sources":["index.pug"],"sourcesContent":["doctype html\nhtml(lang='en')\n    include templates/vars.pug\n    include head.pug\n    include body.pug"],"file":"index.html","sourceRoot":"/source/"}
+{"version":3,"names":[],"mappings":"","sources":["index.pug"],"sourcesContent":["doctype html\nhtml(lang='en')\n    include templates/vars.pug\n    include head.pug\n    include body.pug"],"file":"index.html"}
